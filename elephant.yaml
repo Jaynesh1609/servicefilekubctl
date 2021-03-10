@@ -3,16 +3,16 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: elephant
-  name: elephant
+    run: mypage
+  name: mypage
 spec:
   containers:
-  - image: polinux/stress
-    name: elephant
+  - image: ubuntu:latest
+    name: page
     resources:
       requests:
         memory: "1Mi"
         cpu: 1
       limits:
-        memory: "20Mi"
+        memory: "10Mi"
         cpu: 2
